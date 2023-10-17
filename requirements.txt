@@ -3,3 +3,4 @@ duckdb==0.9.1
 pandas
 matplotlib
 plotly
+dash
