@@ -10,11 +10,12 @@ env:
 
 # Activa el ambiente virtual
 activate:
-	@echo "Ejecuta manualmente '. $(VENV_NAME)/bin/activate' para activar"
+	@echo "Ejecuta manualmente: '. $(VENV_NAME)/bin/activate' para activar"
 
 # Instala los paquetes de requirements.txt en el ambiente virtual
 install: env
 	@echo "Instalando paquetes..."
+	$(VENV_NAME)/bin/pip install -U pip
 	$(VENV_NAME)/bin/pip install -r requirements.txt
 
 
